@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Python button script
+    </title>
+  </head>
+  <body>
+    <form action = "balance" method="post">
+      {%for message in get_flashed_messages()%}
+        <p>{{message}}</p>
+        {% endfor %}
+
+     <!-- <p>whats your address </p> -->
+        <br>
+        <input type = "text" name = "name_input" style="width: 400px">
+        <br>
+        <br>
+        <input type ="submit" value ="balance" id="getBalance" >
+        <br>
+    </form>
+      
+  </body>
+</html>
