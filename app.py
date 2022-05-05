@@ -5,7 +5,7 @@ from web3 import Web3
 app = Flask(__name__)
 app.secret_key = "madmachine"
 
-@app.route("/")
+@app.route("/hello")
 def index():
   flash("Enter Your Ethereum Address")
   return render_template("index.html")
